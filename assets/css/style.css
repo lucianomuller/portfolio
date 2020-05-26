@@ -97,7 +97,7 @@ table, th, td {
 }
 
 body{
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     background-image:
     linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
     linear-gradient(#eee .1em, transparent .1em);
@@ -108,4 +108,64 @@ footer{
     color: rgb(65, 103, 138);
     font-style: italic;
     font-size: large;
+}
+
+
+/* botones */
+
+
+.botones {
+  display: flex;
+  width: 1000px;
+  height: 1000px;
+}
+
+
+/*ubicacion de las letras */
+
+.u-key, .n-key, .r-key, .a-key, .f-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 1000px;
+  height: 100px;
+  border: 3px solid #000;
+}
+
+
+/*separacion entre tecla a y s*/
+
+.u-key {
+  margin-left: 800px;
+  margin-right: 5px;
+}
+
+.n-key {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+.r-key {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.a-key {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.f-key {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* FOTOS */
+#img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

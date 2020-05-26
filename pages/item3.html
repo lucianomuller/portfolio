@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script>
+
+ document.addEventListener("DOMContentLoaded", function() {
+
+
+var elemU = document.querySelector(".u-key");
+var elemN = document.querySelector(".n-key");
+var elemR = document.querySelector(".r-key");
+var elemA = document.querySelector(".a-key");
+var elemF = document.querySelector(".f-key");
+
+window.focus();
+
+// color de fondo de las teclas
+elemU.style.backgroundColor = "#fff";
+elemN.style.backgroundColor = "#fff";
+elemR.style.backgroundColor = "#fff";
+elemA.style.backgroundColor = "#fff";
+elemF.style.backgroundColor = "#fff";
+
+// cambio de color cuando se presiona "keydown" 
+document.addEventListener("keydown", function(event) {
+  switch(event.key) {
+    case "u" || "U" :
+      elemU.style.backgroundColor = "#fcb72e";
+      break;
+    case "n" || "N":
+      elemN.style.backgroundColor = "#1ea1aa";
+      break;
+    case "r" || "R":
+      elemR.style.backgroundColor = "#41678a";
+      break;
+    case "a" || "A":
+      elemA.style.backgroundColor = "#fcb72e";
+      break;
+    case "f" || "F":
+      elemF.style.backgroundColor = "#1ea1aa";
+      break;
+
+  }
+});
+// cuando se dejan de presionar las teclas, vuelven a su color original
+document.addEventListener("keyup", function(event) {
+  switch(event.key) {
+    case "u" || "U":
+      elemU.style.backgroundColor = "#fff";
+      break;
+    case "n" || "N":
+      elemN.style.backgroundColor = "#fff";
+      break;
+    case "r" || "R":
+      elemR.style.backgroundColor = "#fff";
+      break;
+    case "a" || "A":
+      elemA.style.backgroundColor = "#fff";
+      break;
+    case "f" || "F":
+      elemF.style.backgroundColor = "#fff";
+      break;
+  }
+});
+
+});
+  </script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <title>Reacción a teclas del teclado</title>
+</head>
+<body>
+
+  <h1 class= "centrado">Interactúe con el teclado</h1>
+  <h3 class= "centrado" >Presione las teclas U, N, R, A, y F para interactuar con la pantalla.</h3>
+  
+  <p class= "centrado" >Al presionar las teclas, cambiarán de color las letras en la pantalla.</p>
+
+  <div class="contenedor-teclas">
+    <div class="botones">
+      <div class="u-key">U</div>
+      <div class="n-key">N</div>
+      <div class="r-key">R</div>
+      <div class="a-key">A</div>
+      <div class="f-key">F</div>
+    </div>
+  </div>
+
+</body>
+</html>

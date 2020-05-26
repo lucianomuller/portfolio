@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<title>Evento recurrente en el tiempo</title>
+	</head>
+	<body>
+
+        <img id="img" src="https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/VJ.jpg" />
+
+    <script>
+        
+
+        var imgs = [
+         "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/VJ.jpg",    
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/CCGT.jpg",
+         "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/UNI2.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/DEPORTIVO.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/MEC.jpg",
+         "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/IC.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/DI.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/MEDIOS.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/EDU.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/IA.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/GESTION.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/AGI.jpg",
+          "https://www.unraf.edu.ar/images/CARRERAS/nuevos_flyers/RRTT.jpg"
+        ];
+
+        var count = 1;
+
+        setInterval(chgimg,1500);
+
+        function chgimg(){
+            var img = document.querySelector("#img");
+         img.src = imgs[count++];
+            if(count>=imgs.length) count = 0;
+    }
+
+
+            
+    </script>
+        
+
+
+	</body>
+</html>

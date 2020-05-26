@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Trivia</title>
+
+<link rel="stylesheet" type="text/css">
+
+<script>
+
+function resultado() {
+var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, nota, respuestas;
+ 
+
+if (document.getElementById('p14').checked==true) {p1=10}
+else {p1=0}
+
+if (document.getElementById('p23').checked==true) {p2=10}
+else {p2=0}
+
+if (document.getElementById('p33').checked==true) {p3=10}
+else {p3=0}
+
+if (document.getElementById('p41').checked==true) {p4=10}
+else {p4=0}
+
+if (document.getElementById('p51').checked==true) {p5=10}
+else {p5=0}
+
+if (document.getElementById('p63').checked==true) {p6=10}
+else {p6=0}
+
+if (document.getElementById('p73').checked==true) {p7=10}
+else {p7=0}
+
+if (document.getElementById('p84').checked==true) {p8=10}
+else {p8=0}
+
+if (document.getElementById('p92').checked==true) {p9=10}
+else {p9=0}
+
+if (document.getElementById('p104').checked==true) {p10=10}
+else {p10=0}
+
+
+
+respuestas= "\n Pregunta 1 - Unión Soviética " + "\n Pregunta 2 - ET, el extraterrestre " + "\n Pregunta 3 - Balloon Fight " + "\n Pregunta 4 - La ciudad origen de Resident Evil" + "\n Pregunta 5 - Age of Empires" + "\n Pregunta 6 - GTA III" + "\n Pregunta 7 - Friend Game" + "\n Pregunta 8 - Little Big Planet, God of War, The Last of Us" + "\n Pregunta 9 - Porsche" + "\n Pregunta 10 - 1889";
+nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
+
+alert("Puntos: "  + nota)
+alert ("Respuestas correctas: " + respuestas)
+
+location.reload();
+}
+
+</script>
+</head>
+<body>
+
+    <h2>¿QUE TANTO SABES DE VIDEOJUEGOS?</h2>
+    <hr>
+   
+   <p><h3>¿En qué país se inventó el ‘Tetris’?.</h3></p><h6>
+   <p onclick=><input type="radio" name="pregunta1" id="p11"> China.</p>
+   <p onclick=><input type="radio" name="pregunta1" id="p12"> Estados Unidos.</p>
+   <p onclick=><input type="radio" name="pregunta1" id="p13"> Japón.</p>
+   <p onclick=><input type="radio" name="pregunta1" id="p14"> Unión Soviética.</h6></p>
+    <hr>
+   
+   <p><h3>¿Cuál título ha sido proclamado como el ‘peor videojuego de la historia’?.</p></h3><h6>
+   <p onclick=><input type="radio" name="pregunta2" id="p21"> Batman: Arkham Knight.</p>
+   <p onclick=><input type="radio" name="pregunta2" id="p22"> Superman 64.</p>
+   <p onclick=><input type="radio" name="pregunta2" id="p23"> ET, el extraterrestre.</p>
+   <p onclick=><input type="radio" name="pregunta2" id="p24"> Big Rigs: Over the Road Racing.</h6></p>
+    <hr>
+    
+   <p><h3>¿Cuál de estos videojuegos fue creado por Satoru Iwata, expresidente de Nintendo?</h3></p><h6>
+   <p onclick=><input type="radio" name="pregunta3" id="p31"> Mario Bros.</p>
+   <p onclick=><input type="radio" name="pregunta3" id="p32"> Pokemon Stadium.</p>
+   <p onclick=><input type="radio" name="pregunta3" id="p33"> Balloon Fight.</p>
+   <p onclick=><input type="radio" name="pregunta3" id="p34"> Brain Training.</h6></p>
+    <hr>
+   
+   <p><h3>¿Qué es Raccoon City?.</h3></p><h6>
+   <p onclick=><input type="radio" name="pregunta4" id="p41"> La ciudad origen de Resident Evil.</p>
+   <p onclick=><input type="radio" name="pregunta4" id="p42"> La ciudad mayor de Sim City.</p>
+   <p onclick=><input type="radio" name="pregunta4" id="p43"> La ciudad de Batman Arkham City.</p>
+   <p onclick=><input type="radio" name="pregunta4" id="p44"> La ciudad donde arranca Lego City.</h6></p>
+    <hr>
+   
+   <p><h3>¿El efecto de sonido ‘Wololo’ a qué juego hace referencia?.</h3></p><h6>
+   <p onclick=><input type="radio" name="pregunta5" id="p51"> Age of Empires.</p>
+   <p onclick=><input type="radio" name="pregunta5" id="p52"> Warcraft.</p>
+   <p onclick=><input type="radio" name="pregunta5" id="p53"> League of Legends.</p>
+   <p onclick=><input type="radio" name="pregunta5" id="p54"> Smite.</h6></p>
+    <hr>
+   
+    <p><h3>¿Cuál fue la primera versión en 3D de ‘Grand Theft Auto’?.</h3></p><h6>
+    <p onclick=><input type="radio" name="pregunta6" id="p61"> GTA V.</p>
+    <p onclick=><input type="radio" name="pregunta6" id="p62"> GTA Vice City.</p>
+    <p onclick=><input type="radio" name="pregunta6" id="p63"> GTA III.</p>
+    <p onclick=><input type="radio" name="pregunta6" id="p64"> GTA Vice City.</h6></p>
+     <hr>
+   
+     <p><h3>¿Cuál fue el primer videojuego de Facebook?.</h3></p><h6>
+    <p onclick=><input type="radio" name="pregunta7" id="p71"> Farmville.</p>
+    <p onclick=><input type="radio" name="pregunta7" id="p72"> Candy Crush.</p>
+    <p onclick=><input type="radio" name="pregunta7" id="p73"> Friend Game.</p>
+    <p onclick=><input type="radio" name="pregunta7" id="p74"> Criminal Cases.</h6></p>
+     <hr>
+
+     <p><h3>¿Cuáles juegos son exclusivos de Playstation?.</h3></p><h6>
+    <p onclick=><input type="radio" name="pregunta8" id="p81"> God of War, Gran Turismo, Resident Evil.</p>
+    <p onclick=><input type="radio" name="pregunta8" id="p82"> Gran Turismo, Assasins Creed, Infamous.</p>
+    <p onclick=><input type="radio" name="pregunta8" id="p83"> Uncharted, PES, Metal Gear Solid.</p>
+    <p onclick=><input type="radio" name="pregunta8" id="p84"> Little Big Planet, God of War, The Last of Us.</h6></p>
+     <hr>
+        
+    <p><h3>¿Cuál de estas marcas tuvo un juego propio en Need for Speed?.</h3></p><h6>
+    <p onclick=><input type="radio" name="pregunta9" id="p91"> Ferrari.</p>
+    <p onclick=><input type="radio" name="pregunta9" id="p92"> Porsche.</p>
+    <p onclick=><input type="radio" name="pregunta9" id="p93"> BWM.</p>
+    <p onclick=><input type="radio" name="pregunta9" id="p94"> Ford.</h6></p>
+     <hr>
+        
+    <p><h3> ¿En qué año fue fundado Nintendo?.</h3></p><h6>
+    <p onclick=><input type="radio" name="pregunta10" id="p101"> 1931.</p>
+    <p onclick=><input type="radio" name="pregunta10" id="p102"> 1945.</p>
+    <p onclick=><input type="radio" name="pregunta10" id="p103"> 1970.</p>
+    <p onclick=><input type="radio" name="pregunta10" id="p104"> 1889.</h6></p>
+     <hr>
+
+
+
+
+   <p><h3>Haga click sobre RESULTADO para saber su puntaje.</h3></p>
+
+<div id="main-container">
+<p><input class="btn" type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</div>
+
+</body>
+</html>
